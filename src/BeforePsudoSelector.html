@@ -5,12 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Before And After Psudo Selector</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&family=Roboto:wght@100&family=Sevillana&display=swap" rel="stylesheet">
     <style>
         body{
+            
             background-color: black;
-            color: aliceblue;
+            color: white;
         }
+        header::before{
+            background: url('https://images.unsplash.com/photo-1683009426952-13567b4fa28b?q=80&w=1438&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')no-repeat center center/cover;
+
+            content: "";
+            position: absolute;
+           top: 0;
+           bottom: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;    
+        }
+
         .navigation{
+            font-family: 'Roboto', sans-serif;
             font-size: 20px;
             display: flex;
         }
@@ -20,7 +38,6 @@
         }
         section{
             height: 344px;
-            border: 2px solid red;
             margin: 3px 23px;
             display: flex;
             flex-direction: column;
@@ -49,15 +66,18 @@
                 <li class="item">Contact Us</li>
             </ul>
         </nav>
+    </header>
+
         <section>
             <h1>Welcome To Coding World</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam sint nesciunt esse ipsam fugiat nihil
             incidunt quasi modi quia facere ullam dicta animi autem natus reprehenderit itaque dolor dolores vitae, iure
             qui perferendis exercitationem?</p>
         </section>
+       
+        
 
-    </header>
-
+    
 </body>
 
 </html>

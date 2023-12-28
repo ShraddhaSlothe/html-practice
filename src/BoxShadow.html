@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow And Text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 25px;
+            margin: 23px 12px ;
+            /* border: 2px solid palevioletred; */
+            background-color: palevioletred;
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: offset-x offset-y blur radius color; */
+            /* box-shadow: offset-x offset-y color blur-radius spread-radius color; */
+
+
+            /* box-shadow: 10px 15px orange; */
+            /* box-shadow: -10px -15px orange; */
+            /* box-shadow: 10px 15px 20px orange;      (20px is blur radius) */
+            /* box-shadow: -10px -15px 20px 34px orange;      (20px is blur radius) */
+            /* box-shadow: -7px -5px 10px 15px green; */
+            /* box-shadow: -7px -5px 10px 15px rgb(10, 53, 10); */
+            box-shadow: inset 3px 5px green;
+            box-shadow: 3px 5px 10px green, 4px 6px red;
+        }
+        .card h2{
+            text-shadow: 3px 2px 2px white;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>This is C++ Course</h2>
+            <p>I have started c++ course which does not mean that this will be stop. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat cupiditate rerum cumque officia fuga
+                soluta ad harum dicta sed voluptates tenetur, assumenda eos voluptatibus esse neque ipsam necessitatibus
+                adipisci distinctio? Ut vitae cum error!</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>This is HTML Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta tempora ipsum eaque quod culpa quo
+                assumenda! Tenetur perspiciatis quia at quas alias blanditiis! Molestias tempora sint illo. Sed deserunt
+                laboriosam voluptates veniam, provident tenetur!
+            </p>
+        </div>
+        <div class="card" id="card3">
+            <h2>This is Java Script Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aut mollitia, facilis atque rem
+                incidunt sint praesentium ratione facere minima quos reiciendis hic omnis, cum officia fugit repellendus
+                quod. Harum doloremque sapiente quae iusto?</p>
+        </div>
+    </div>
+</body>
+
+</html>
