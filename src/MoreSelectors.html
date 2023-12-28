@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+     h1{
+        background-color:palevioletred;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+     }
+     /* if p is contained by any li which is  contained by div */
+     /* div li p{
+        color: yellow;
+        background-color: lightblue;
+        font-weight: bold;
+     } */
+
+     /* if p is right inside div then this CSS will be app */
+     /* div > p{      /*(Direct parent of p in these case use this)
+        color: yellow;
+        background-color: aqua;
+        font-weight: bold;
+     } */ 
+
+     /* if p is right after div i.e p is next sibling of div */
+      div+p{               /*   ( div is previous sibling of p) */
+        color: white;
+        background-color: red;
+     }
+    </style>
+</head>
+<body>
+    <h1>This is More On Selectors</h1>
+    <div class="container">
+        <div class="row"> 
+            <ul>
+                <li class="item"><p>This is Another paragraph inside li</p></li>
+                <li>this will not getting affected</li>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is outermost paragraph</p>
+    
+</body>
+</html>

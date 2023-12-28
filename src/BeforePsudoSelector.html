@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before And After Psudo Selector</title>
+    <style>
+        body{
+            background-color: black;
+            color: aliceblue;
+        }
+        .navigation{
+            font-size: 20px;
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 34px 23px;
+        }
+        section{
+            height: 344px;
+            border: 2px solid red;
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content: center;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+        }
+        /* section::before{
+            content:"This is a content"
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About </li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+        <section>
+            <h1>Welcome To Coding World</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam sint nesciunt esse ipsam fugiat nihil
+            incidunt quasi modi quia facere ullam dicta animi autem natus reprehenderit itaque dolor dolores vitae, iure
+            qui perferendis exercitationem?</p>
+        </section>
+
+    </header>
+
+</body>
+
+</html>
