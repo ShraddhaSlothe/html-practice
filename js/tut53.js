@@ -8,6 +8,8 @@ function greet(name, greetText="greetings from javascript "){
 function sum (a,b,c){
     let d = a + b + c;
     return d;
+    // this line will never execute(unrechable code)
+    // console.log("function is returned");
 
 }
 
