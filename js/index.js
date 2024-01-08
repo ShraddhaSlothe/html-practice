@@ -175,10 +175,101 @@ for(var i=0;i<arr.length;i++){
 
 let myArr = ["fan", "camera", 34, null, true];
 // Array Methods
-console.log(myArr.length);
+// console.log(myArr.length);
 // myArr.pop();
 // myArr.push("harry")
 // myArr.shift()
-myArr.unshift("harry")
-console.log(newLen);
-console.log(myArr);
+// myArr.unshift("harry")
+// console.log(newLen);
+// console.log(myArr);
+
+//string methods in javascript
+let myLovelyString = "Harry is a good boy good good"; 
+// console.log(myLovelyString.length)
+// console.log(myLovelyString.indexOf("good"))
+// console.log(myLovelyString.lastIndexOf("good"))
+
+// console.log(myLovelyString.slice(1,4))
+d = myLovelyString.replace("Harry","shubham");
+// d = d.replace("good","bad");
+// console.log(d,myLovelyString) 
+
+// let myDate = new Date();
+// console.log(myDate.getTime());
+// console.log(myDate.getFullYear());
+// console.log(myDate.getDay());
+// console.log(myDate.getMinutes());
+// console.log(myDate.getHours());
+
+//DOM Manipulation
+// let elem = document.getElementById('click');
+// console.log(elem);
+
+// let elemClass = document.getElementsByClassName("container");
+// console.log(elemClass);
+// // elemClass[0].style.background = "yellow";
+// elemClass[0].classList.add("bg-primary")
+// elemClass[0].classList.add("text-success")
+
+
+
+// console.log(elemClass[0].innerHTML);
+// console.log(elemClass[0].innerText);
+// tn = document.getElementsByTagName('div')
+// console.log(tn)
+// createdElement = document.createElement('p');
+// customElements.innerText = "this is created para";
+// tn[0].appendChild(createdElement);
+// createdElement2 = document.createElement('b');
+// createdElement2.innerText = "this is created bold";
+// tn[0].replaceChild(createdElement2, createdElement);
+// // reemoveChild(Element);----->removes an Element
+
+// //Selecting using Query
+// sel =  document.querySelector('.container')
+// console.log(sel)
+// sel = document.querySelectorAll('.container')
+// console.log(sel)
+
+// function clicked(){
+//     console.log('the button was clicked')
+// }
+// window.onload = function(){
+    //console.log('the document was loaded')
+//}
+
+// Events in JavaScript
+// firstcontainer.addEventListener('click', function(){
+//     document.querySelectorAll('.container')[1].innerHTML = "<b> we have clicked </b> "
+//      console.log("Clicked on Container")
+
+//  })
+
+// firstcontainer.addEventListener('mouseover', function(){
+//     console.log("Mouse out on container")
+// })
+
+// firstcontainer.addEventListener('mouseout', function(){
+//     console.log("Mouse out of Container");
+// })
+// firstcontainer.addEventListener('mouseup',function(){
+//     console.log("mouse up when clicked on container");
+// })
+// firstcontainer.addEventListener('mousedown',function(){
+//     document.querySelectorAll('.container')[1].innerHTML = "<b> we have clicked </b> "
+//     console.log("mouse down when clicked on container");
+// })
+
+//Arrow Functions
+function summ(a,b){
+    return a+b;
+}
+summ = (a,b)=>{
+    return a+b;
+}
+logKaro = ()=>{
+    console.log("i am your log")
+}
+
+// setTimeout and setInterval
+setTimeout(logKaro,2000);
